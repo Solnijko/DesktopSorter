@@ -8,7 +8,6 @@ from watchdog.events import FileSystemEventHandler
 desktop_path = os.path.dirname(f"C:\\Users\\{getuser()}\\Desktop\\")
 desktop_path_scanned = os.scandir(desktop_path)
 file_extension_pattern = r"\.([^.]+)$"
-exec_count = 0
 
 def main():
     event_handler = handleFiles()
